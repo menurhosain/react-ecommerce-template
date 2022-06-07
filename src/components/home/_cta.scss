@@ -1,0 +1,29 @@
+.cta {
+  grid-column: center-start / center-end;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  column-gap: 3rem;
+
+  &__single {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    column-gap: 3rem;
+
+    padding: 5rem;
+    &__off-percentage {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: $color-1;
+    }
+    .heading-tersiary {
+      color: $tersiary-text-color;
+    }
+    &__img {
+      grid-column: 2 / 3;
+      width: 100%;
+    }
+  }
+}

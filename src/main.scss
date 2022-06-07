@@ -1,0 +1,17 @@
+//This 5  files need to be load first.other files depends on them.
+@import "css/variable";
+@import "css/mixin";
+@import "css/base";
+@import "css/typography";
+@import "css/utilities";
+
+//grid
+//@import "css/grid";
+
+//@pages style
+@import "pages/home";
+
+//header style
+@import "components/global/header";
+@import "components/home/banner";
+@import "components/home/cta";

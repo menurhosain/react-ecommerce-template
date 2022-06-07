@@ -1,0 +1,19 @@
+.home-banner {
+  grid-column: full-start / full-end;
+  height: calc(100vh - 7rem);
+  background-image: url("./../img/home-banner.jpg");
+  background-size: cover;
+  @include fullGrid;
+  align-content: center;
+
+  &__content {
+    grid-column: center-start / center-end;
+  }
+
+  .heading-tersiary {
+    color: $color-1;
+  }
+  .heading-primary {
+    color: $secondery-text-color;
+  }
+}

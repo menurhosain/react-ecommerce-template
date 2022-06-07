@@ -1,0 +1,136 @@
+.header {
+  grid-column: full-start / full-end;
+  @include fullGrid;
+  grid-template-rows: 7rem;
+  box-shadow: 0px 1rem 1rem #f1f1f1;
+
+  &__logo {
+    grid-column: col-start 1 / col-end 2;
+    @include flexCenter;
+
+    &__img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}
+
+//category dropdown style
+.categories {
+  grid-column: col-start 3 / col-end 4;
+  @include flexCenter;
+
+  & > :not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &-svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+}
+
+//search bar style
+.search {
+  grid-column: col-start 5 / col-end 8;
+  position: relative;
+  @include flexCenter;
+  color: $primary-text-color;
+
+  &-svg {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 2.5rem;
+  }
+
+  &__input {
+    width: 90%;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    color: inherit;
+  }
+}
+
+//container
+.cart-wishlist {
+  grid-column: col-start 10 / col-end 11;
+  cursor: pointer;
+  @include flexCenter;
+  justify-content: space-between;
+}
+
+//wishlist style
+.wishlist {
+  margin-top: 4px;
+  cursor: pointer;
+  &-svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+//cart style
+.cart {
+  @include flexCenter;
+  cursor: pointer;
+
+  & > :not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  &__icon {
+    position: relative;
+
+    &-cart-item-no {
+      height: 1.5rem;
+      width: 1.5rem;
+      font-size: 1rem;
+      background-color: $color-1;
+      border-radius: 50%;
+      font-weight: 600;
+      color: #fff;
+      position: absolute;
+      top: -10px;
+      left: -3px;
+      @include flexCenter;
+    }
+  }
+
+  &-svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  &__list {
+    visibility: hidden;
+  }
+}
+
+//user short profile
+.user-short-profile {
+  grid-column: col-start 12 / col-end 12;
+  color: $primary-text-color;
+  font-size: 1.2rem;
+  cursor: pointer;
+  @include flexCenter;
+
+  & > :not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  &-svg {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  &__photo {
+    width: 3rem;
+  }
+}
